@@ -1,12 +1,19 @@
-# React + Vite
+# Git/GitHub Collaboration Practice
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome! This project is for practicing Git/GitHub collaboration.
 
-Currently, two official plugins are available:
+## Instructions
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Welcome to Git/GitHub collaboration practice!
 
-## Expanding the ESLint configuration
+1. Create a NavLink in the navbar with your name.  
+2. The link should redirect to your personal page: `/yourname`.  
+3. Create a component with your name in all caps (e.g., `REHAN`).  
+4. The component should display:  
+   - Your name  
+   - Your LinkedIn bio or a short description  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Example:**  
+- Navbar link: `REHAN`  
+- Route: `/rehan`  
+- Component content: My name is Rehan, welcome to my GitHub practice!
