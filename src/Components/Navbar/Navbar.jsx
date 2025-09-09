@@ -1,46 +1,38 @@
 import React from "react";
-import "./active.css";
 import { NavLink } from "react-router-dom";
+import "./active.css"; // optional for custom styles
+
 export default function Navbar() {
   return (
-    <div className="navbar  shadow-sm">
-      <div className="navbar-start">
-        <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              {" "}
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />{" "}
-            </svg>
-          </div>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content  rounded-box z-1 mt-3 w-52 p-2 shadow"
+    <nav className="navbar bg-gray-800 text-white p-4 flex justify-between items-center">
+      {/* Logo */}
+      <div className="logo text-2xl font-bold">
+        Hydra Dev
+      </div>
+
+      {/* Menu */}
+      <ul className="menu flex flex-row gap-6">
+        <li>
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? "text-yellow-400 font-bold" : "hover:text-yellow-300"
+            }
           >
-            <li>
-              <NavLink>Home</NavLink>
-            </li>
-          </ul>
-        </div>
-        <a className="text-white btn bg-transparent text-xl">Hydra Dev</a>
-      </div>
-      <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          <li>
-            <NavLink>Home</NavLink>
-          </li>
-        </ul>
-      </div>
-    </div>
+            Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/rehan"
+            className={({ isActive }) =>
+              isActive ? "text-yellow-400 font-bold" : "hover:text-yellow-300"
+            }
+          >
+            REHAN
+          </NavLink>
+        </li>
+      </ul>
+    </nav>
   );
 }
