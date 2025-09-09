@@ -4,6 +4,7 @@ import { Component } from "react";
 import { createBrowserRouter } from "react-router-dom";
 import Layout from "../Layout/Layout";
 import Home from "../Page/Home/Home";
+import Rehan from "../Page/Rehan/Rehan";
 
 let router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ let router = createBrowserRouter([
         index: true,
         Component: Home,
       },
+      {
+        path: '/rehan',
+        Component: Rehan
+      }
     ],
   },
 ]);
