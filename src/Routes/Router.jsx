@@ -7,6 +7,7 @@ import Home from "../Page/Home/Home";
 import Rehan from "../Page/Rehan/Rehan";
 import Bayzid from "../Page/Bayzid/Bayzid";
 import SMABari from "../Page/SMABari/SMABari";
+import Abid from "../Page/Abid/Abid";
 
 let router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ let router = createBrowserRouter([
       {
         path: "/bayzid",
         Component: Bayzid,
+      },
+      {
+        path: "/abid",
+        Component: Abid,
       },
     ],
   },
