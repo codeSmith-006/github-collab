@@ -11,7 +11,7 @@ export default function Navbar() {
       </div>
 
       {/* Menu */}
-      <ul className="menu flex flex-row gap-6">
+      <ul className="menu flex felxr space-x-6 text-lg">
         <li>
           <NavLink
             to="/"
