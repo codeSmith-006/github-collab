@@ -11,7 +11,7 @@ export default function Navbar() {
       </div>
 
       {/* Menu */}
-      <ul className="menu flex flex-row gap-6">
+      <ul className="menu flex space-x-6 text-lg">
         <li>
           <NavLink
             to="/"
@@ -31,8 +31,6 @@ export default function Navbar() {
           >
             REHAN
           </NavLink>
-        </li>
-        <li>
           <NavLink
             to="/bayzid"
             className={({ isActive }) =>

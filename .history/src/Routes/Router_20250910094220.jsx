@@ -5,7 +5,6 @@ import { createBrowserRouter } from "react-router-dom";
 import Layout from "../Layout/Layout";
 import Home from "../Page/Home/Home";
 import Rehan from "../Page/Rehan/Rehan";
-import Bayzid from "../Page/Bayzid/Bayzid";
 
 let router = createBrowserRouter([
   {
@@ -21,8 +20,8 @@ let router = createBrowserRouter([
         Component: Rehan
       },
       {
-        path: '/bayzid',
-        Component: Bayzid
+        path: '/B',
+        Component: Rehan
       }
     ],
   },

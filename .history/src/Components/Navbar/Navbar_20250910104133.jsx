@@ -31,8 +31,6 @@ export default function Navbar() {
           >
             REHAN
           </NavLink>
-        </li>
-        <li>
           <NavLink
             to="/bayzid"
             className={({ isActive }) =>

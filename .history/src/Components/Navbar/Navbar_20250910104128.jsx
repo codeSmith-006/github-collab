@@ -31,16 +31,7 @@ export default function Navbar() {
           >
             REHAN
           </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/bayzid"
-            className={({ isActive }) =>
-              isActive ? "text-yellow-400 font-bold" : "hover:text-yellow-300"
-            }
-          >
-            BAYZID
-          </NavLink>
+          
         </li>
       </ul>
     </nav>
