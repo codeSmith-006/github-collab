@@ -6,6 +6,7 @@ import Layout from "../Layout/Layout";
 import Home from "../Page/Home/Home";
 import Rehan from "../Page/Rehan/Rehan";
 import Bayzid from "../Page/Bayzid/Bayzid";
+import SMABari from "../Page/SMABari/SMABari";
 
 let router = createBrowserRouter([
   {
@@ -17,13 +18,17 @@ let router = createBrowserRouter([
         Component: Home,
       },
       {
-        path: '/rehan',
-        Component: Rehan
+        path: "/rehan",
+        Component: Rehan,
       },
       {
-        path: '/bayzid',
-        Component: Bayzid
-      }
+        path: "/sma-bari",
+        Component: SMABari,
+      },
+      {
+        path: "/bayzid",
+        Component: Bayzid,
+      },
     ],
   },
 ]);

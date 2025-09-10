@@ -6,9 +6,7 @@ export default function Navbar() {
   return (
     <nav className="navbar bg-gray-800 text-white p-4 flex justify-between items-center">
       {/* Logo */}
-      <div className="logo text-2xl font-bold">
-        Hydra Dev
-      </div>
+      <div className="logo text-2xl font-bold">Hydra Dev</div>
 
       {/* Menu */}
       <ul className="menu flex flex-row gap-6">
@@ -30,6 +28,16 @@ export default function Navbar() {
             }
           >
             REHAN
+          </NavLink>
+        </li>
+        <li>
+          <NavLink
+            to="/sma-bari"
+            className={({ isActive }) =>
+              isActive ? "text-yellow-400 font-bold" : "hover:text-yellow-300"
+            }
+          >
+            SMA Bari
           </NavLink>
         </li>
         <li>
