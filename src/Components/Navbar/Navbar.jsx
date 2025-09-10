@@ -49,9 +49,9 @@ export default function Navbar() {
           >
             BAYZID
           </NavLink>
-          </li>
-          <li>
-<NavLink
+        </li>
+        <li>
+          <NavLink
             to="/abid"
             className={({ isActive }) =>
               isActive ? "text-yellow-400 font-bold" : "hover:text-yellow-300"
@@ -59,9 +59,20 @@ export default function Navbar() {
           >
             ABID
           </NavLink>
-          </li>
-          
+        </li>
         
+        <li>
+          <NavLink
+            to="/rakib"
+            className={({ isActive }) =>
+              isActive ? "text-yellow-400 font-bold" : "hover:text-yellow-300"
+            }
+          >
+            RAKIB
+          </NavLink>
+        </li>
+
+
       </ul>
     </nav>
   );
