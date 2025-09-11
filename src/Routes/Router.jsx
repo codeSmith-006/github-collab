@@ -8,6 +8,7 @@ import Rehan from "../Page/Rehan/Rehan";
 import Bayzid from "../Page/Bayzid/Bayzid";
 import SMABari from "../Page/SMABari/SMABari";
 import Abid from "../Page/Abid/Abid";
+import Rakib from "../Page/Rakib/Rakib";
 
 let router = createBrowserRouter([
   {
@@ -33,6 +34,10 @@ let router = createBrowserRouter([
       {
         path: "/abid",
         Component: Abid,
+      },
+       {
+        path: "/rakib",
+        Component: Rakib,
       },
     ],
   },
