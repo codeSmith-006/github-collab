@@ -72,6 +72,17 @@ export default function Navbar() {
           </NavLink>
         </li>
 
+        <li>
+          <NavLink
+            to="/rakib"
+            className={({ isActive }) =>
+              isActive ? "text-yellow-400 font-bold" : "hover:text-yellow-300"
+            }
+          >
+            ALAMIN
+          </NavLink>
+        </li>
+
 
       </ul>
     </nav>
